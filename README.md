@@ -88,7 +88,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 
 ## Community tools
 
-- [Flipper One Pinout](https://hypery11.github.io/flipper-one-pinout/) - Interactive GPIO header pinout viewer. Click a pin to see its alternate-function mux configurations, or filter by protocol (I²C, UART, SPI, SAI, etc.). Source: [`hypery11/flipper-one-pinout`](https://github.com/hypery11/flipper-one-pinout). *(Disclosure: maintainer of this list.)*
+- [Flipper One Pinout](https://hypery11.github.io/flipper-one-pinout/) - Interactive viewer for the GPIO header and the M.2 port. Click a pin to see its functions and (on GPIO pins) the alternate-function mux configurations; filter by protocol (I²C, UART, SPI, SAI, PCIe, SIM, etc.). Source: [`hypery11/flipper-one-pinout`](https://github.com/hypery11/flipper-one-pinout). *(Disclosure: maintainer of this list.)*
 
 ## Adjacent ecosystems
 
