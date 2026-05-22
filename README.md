@@ -86,6 +86,10 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
   - `cpu/sbc-bench.sh` - Bundled copy of [sbc-bench](https://github.com/ThomasKaiser/sbc-bench), the standard SBC benchmark tool.
 - [Archbee starter](https://github.com/Archbee/starter) - Docs are built on Archbee. The official Flipper One developer portal is generated from `flipperone-docs` via Archbee's GitHub integration.
 
+## Community tools
+
+- [Flipper One Pinout](https://hypery11.github.io/flipper-one-pinout/) - Interactive GPIO header pinout viewer. Click a pin to see its alternate-function mux configurations, or filter by protocol (I²C, UART, SPI, SAI, etc.). Source: [`hypery11/flipper-one-pinout`](https://github.com/hypery11/flipper-one-pinout). *(Disclosure: maintainer of this list.)*
+
 ## Adjacent ecosystems
 
 The following aren't Flipper One specifically but are part of the wider Flipper Devices ecosystem and worth knowing about.
