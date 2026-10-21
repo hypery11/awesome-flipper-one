@@ -93,6 +93,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [flipctl](https://github.com/flipperdevices/flipctl) - FlipCTL source: a backend that wraps systemd, networking, and CLI tools, plus an HTML/JS frontend.
 - [flipctl-slint](https://github.com/flipperdevices/flipctl-slint) - Slint implementation of the Flipper One UI for the 256×144 SPI panel, shared by the installer and the boot menu.
 - [flipctl-fonts](https://github.com/flipperdevices/flipctl-fonts) - Pixel fonts adapted for the FlipCTL UI.
+- [flipctl-apps](https://github.com/flipperdevices/flipctl-apps) - Catalog (`apps.toml`) and release downloads for the apps a Flipper One can install from its app manager, such as test tools, a browser, and games.
 - [flipperos-installer](https://github.com/flipperdevices/flipperos-installer) - Rust installer that runs from an initramfs and installs Flipper OS on RK3576 boards, with TUI and on-screen GUI.
 - [flipperos-installer-initramfs](https://github.com/flipperdevices/flipperos-installer-initramfs) - Buildroot recipe for the initramfs that runs the installer.
 - [flipperos-boot-menu](https://github.com/flipperdevices/flipperos-boot-menu) - Buildroot initramfs that lists bootable profiles on the screen and kexecs into the chosen one.
@@ -120,6 +121,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Flipper One Pinout](https://hypery11.github.io/flipper-one-pinout/) - Interactive viewer for the GPIO header and the M.2 port. Click a pin to see its functions and (on GPIO pins) the alternate-function mux configurations; filter by protocol (I²C, UART, SPI, SAI, PCIe, SIM, etc.). Source: [`hypery11/flipper-one-pinout`](https://github.com/hypery11/flipper-one-pinout). *(Disclosure: maintainer of this list.)*
 - [Flipper One Lab](https://github.com/kalicyh/flipperone-lab) - Container images for running the public userspace and the `fake-flipctl2` UI harness in a desktop browser. Listed on the official community page.
 - [QEMU Flipper OS](https://github.com/Gelules/qemu-flipperos) - Scripts that boot an official Flipper OS build in QEMU on a Linux PC, with FlipCTL in the browser.
+- [Bad Apple!! on Flipper One](https://github.com/Gelules/flipperone-bad-apple) - Two Python FlipCTL apps that play Bad Apple!! on the 256×144 panel (greyscale and 1-bit), so far tested in QEMU.
 - [Flipper One VM](https://github.com/plusmalias/flipper-one-vm) - Runs the official Flipper OS image on an Intel Mac under QEMU, with a live front-panel UI and SSH.
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - Unofficial Apple Silicon app that boots Flipper OS in a local VM and shows FlipCTL in a macOS window.
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs OS profile manager, built as a working version of an RFC in `flipperone-linux-build-scripts`.

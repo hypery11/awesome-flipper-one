@@ -93,6 +93,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [flipctl](https://github.com/flipperdevices/flipctl) - FlipCTL 原始碼：後端包裝 systemd、網路設定和命令列工具，前端用 HTML/JS。
 - [flipctl-slint](https://github.com/flipperdevices/flipctl-slint) - 用 Slint 實作的 Flipper One UI，給 256×144 SPI 面板使用，安裝程式和開機選單共用。
 - [flipctl-fonts](https://github.com/flipperdevices/flipctl-fonts) - 為 FlipCTL UI 調整過的像素字型。
+- [flipctl-apps](https://github.com/flipperdevices/flipctl-apps) - Flipper One 應用程式管理器可安裝之 App 的目錄（`apps.toml`）與發行下載，例如測試工具、瀏覽器與遊戲。
 - [flipperos-installer](https://github.com/flipperdevices/flipperos-installer) - 從 initramfs 執行、把 Flipper OS 裝到 RK3576 開發板上的 Rust 安裝程式，有 TUI 和螢幕 GUI。
 - [flipperos-installer-initramfs](https://github.com/flipperdevices/flipperos-installer-initramfs) - 產生執行安裝程式所需 initramfs 的 Buildroot 配方。
 - [flipperos-boot-menu](https://github.com/flipperdevices/flipperos-boot-menu) - Buildroot initramfs，在螢幕上列出可開機的設定檔，再用 kexec 進入選中的那一個。
@@ -120,6 +121,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Flipper One Pinout](https://hypery11.github.io/flipper-one-pinout/) - GPIO 排針和 M.2 埠的互動式檢視器。點選腳位可看功能，GPIO 腳位還能看替代功能的 mux 設定；可依協定篩選（I²C、UART、SPI、SAI、PCIe、SIM 等）。原始碼：[`hypery11/flipper-one-pinout`](https://github.com/hypery11/flipper-one-pinout)。*（揭露：本清單維護者的作品。）*
 - [Flipper One Lab](https://github.com/kalicyh/flipperone-lab) - 容器映像，可在桌機瀏覽器中執行公開的使用者空間和 `fake-flipctl2` UI 測試環境。已列在官方社群頁面。
 - [QEMU Flipper OS](https://github.com/Gelules/qemu-flipperos) - 在 Linux PC 上用 QEMU 開機官方 Flipper OS 建置的腳本，FlipCTL 在瀏覽器中顯示。
+- [Bad Apple!! on Flipper One](https://github.com/Gelules/flipperone-bad-apple) - 兩個在 256×144 面板上播放 Bad Apple!! 的 Python FlipCTL App（灰階與 1-bit），目前在 QEMU 中測試。
 - [Flipper One VM](https://github.com/plusmalias/flipper-one-vm) - 在 Intel Mac 上用 QEMU 執行官方 Flipper OS 映像，附即時前面板 UI 和 SSH。
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - 非官方 Apple Silicon App，在本機 VM 開機 Flipper OS，並在 macOS 視窗中顯示 FlipCTL。
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs 的 OS 設定檔管理工具，是 `flipperone-linux-build-scripts` 一項 RFC 的實作版本。
