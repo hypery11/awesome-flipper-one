@@ -1,5 +1,9 @@
 # Awesome Flipper One [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+![Awesome Flipper One](assets/banner.png)
+
+[![Entries](https://img.shields.io/badge/entries-69-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--21-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+
 English | [繁體中文](README.zh-TW.md)
 
 > Curated resources for [Flipper One](https://blog.flipper.net/flipper-one-we-need-your-help/) — Flipper Devices' open-source portable Linux multi-tool, currently in active community-driven development.
@@ -8,8 +12,53 @@ Flipper One is **not the same device as Flipper Zero**. Where Flipper Zero focus
 
 This list tracks what's currently public, what's being worked on, and where to plug in.
 
+## New this week
+
+Added between 2026-10-15 and 2026-10-21 (derived from git history).
+
+- [Dev Log](https://docs.flipper.net/one/dev-log) - Regular progress reports covering each sub-project. Entry #10 explains how to run Flipper OS on a supported RK3576 board before Flipper One ships. _(Official resources)_
+- [Community projects page](https://docs.flipper.net/one/community) - Official index of community-built Flipper One projects, added via PRs to `flipperone-docs`. _(Official resources)_
+- [M.2 modules](https://docs.flipper.net/one/hardware/m2-port/modules) - Categories of off-the-shelf M.2 modules that can extend Flipper One, with satellite modem and GNSS receiver subpages. _(Hardware)_
+- [Power subsystem](https://docs.flipper.net/one/hardware/power-subsystem) - 2-cell Li-ion battery, USB PD charging on USB-C1, and DC/DC converters managed by the RP2350. _(Hardware)_
+- [Debug Probe docs](https://docs.flipper.net/one/hardware/debug-probe) - RP2350-based probe that connects by ribbon cable to the debug port behind the back plate. _(Hardware)_
+- [flipperone-debug-probe](https://github.com/flipperdevices/flipperone-debug-probe) - Firmware for the Debug Probe, with CI-built `.uf2` files for MCU and CPU debugging. _(Hardware)_
+- [How to install a Linux image](https://docs.flipper.net/one/cpu-software/how-to-install-linux-image) - Install Flipper OS to microSD or UFS with the on-device installer or by flashing manually. _(Boot, kernel, and userspace)_
+- [Supported boards](https://docs.flipper.net/one/cpu-software/supported-boards) - RK3576 boards that run official Flipper OS images, with target names, boot priority, and MaskROM instructions. _(Boot, kernel, and userspace)_
+
+<details>
+<summary>25 more added this week</summary>
+
+- [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - How the RK3576 picks a boot device and how to flash it over USB. _(Boot, kernel, and userspace)_
+- [Flipper OS docs](https://docs.flipper.net/one/cpu-software/flipper-os) - The concept behind Flipper OS: switchable OS profiles on top of Debian. _(Flipper OS and FlipCTL)_
+- [FlipCTL docs](https://docs.flipper.net/one/cpu-software/flipctl) - The UI framework that drives the device screen, web browser, and SSH control interfaces. _(Flipper OS and FlipCTL)_
+- [flipctl](https://github.com/flipperdevices/flipctl) - FlipCTL source: a backend that wraps systemd, networking, and CLI tools, plus an HTML/JS frontend. _(Flipper OS and FlipCTL)_
+- [flipctl-slint](https://github.com/flipperdevices/flipctl-slint) - Slint implementation of the Flipper One UI for the 256×144 SPI panel, shared by the installer and the boot menu. _(Flipper OS and FlipCTL)_
+- [flipctl-fonts](https://github.com/flipperdevices/flipctl-fonts) - Pixel fonts adapted for the FlipCTL UI. _(Flipper OS and FlipCTL)_
+- [flipctl-apps](https://github.com/flipperdevices/flipctl-apps) - Catalog (`apps.toml`) and release downloads for the apps a Flipper One can install from its app manager, such as test tools, a browser, and games. _(Flipper OS and FlipCTL)_
+- [flipperos-installer](https://github.com/flipperdevices/flipperos-installer) - Rust installer that runs from an initramfs and installs Flipper OS on RK3576 boards, with TUI and on-screen GUI. _(Flipper OS and FlipCTL)_
+- [flipperos-installer-initramfs](https://github.com/flipperdevices/flipperos-installer-initramfs) - Buildroot recipe for the initramfs that runs the installer. _(Flipper OS and FlipCTL)_
+- [flipperos-boot-menu](https://github.com/flipperdevices/flipperos-boot-menu) - Buildroot initramfs that lists bootable profiles on the screen and kexecs into the chosen one. _(Flipper OS and FlipCTL)_
+- [flipperos-recovery](https://github.com/flipperdevices/flipperos-recovery) - Minimal immutable recovery initramfs that runs from RAM so it can reflash storage. _(Flipper OS and FlipCTL)_
+- [flipperos-btrfs-tools](https://github.com/flipperdevices/flipperos-btrfs-tools) - POSIX sh tools for btrfs-based OS profiles, snapshots, and BLS boot entries. _(Flipper OS and FlipCTL)_
+- [How to build firmware](https://docs.flipper.net/one/mcu-firmware/how-to-build-firmware) - Build the MCU `.uf2` from source and upload it over USB. _(MCU firmware)_
+- [flipperone-mcu-protobuf](https://github.com/flipperdevices/flipperone-mcu-protobuf) - Protobuf description of the MCU RPC protocol, used as a submodule by the MCU firmware. _(MCU firmware)_
+- [fbtng-corelibs](https://github.com/flipperdevices/fbtng-corelibs) - Core libraries included in the MCU firmware as `lib/corelibs`. _(MCU firmware)_
+- [Flipper One Lab](https://github.com/kalicyh/flipperone-lab) - Container images for running the public userspace and the `fake-flipctl2` UI harness in a desktop browser. Listed on the official community page. _(Community tools)_
+- [QEMU Flipper OS](https://github.com/Gelules/qemu-flipperos) - Scripts that boot an official Flipper OS build in QEMU on a Linux PC, with FlipCTL in the browser. _(Community tools)_
+- [Bad Apple!! on Flipper One](https://github.com/Gelules/flipperone-bad-apple) - Two Python FlipCTL apps that play Bad Apple!! on the 256×144 panel (greyscale and 1-bit), so far tested in QEMU. _(Community tools)_
+- [Flipper One VM](https://github.com/plusmalias/flipper-one-vm) - Runs the official Flipper OS image on an Intel Mac under QEMU, with a live front-panel UI and SSH. _(Community tools)_
+- [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - Unofficial Apple Silicon app that boots Flipper OS in a local VM and shows FlipCTL in a macOS window. _(Community tools)_
+- [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs OS profile manager, built as a working version of an RFC in `flipperone-linux-build-scripts`. _(Community tools)_
+- [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Local proof of concept for the Flipper OS storage architecture RFC (squashfs + dm-verity and an all-Btrfs alternative). _(Community tools)_
+- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - Community attempt at an open DDR trainer to replace the closed RK3576 DDR blob in the boot chain. _(Community tools)_
+- [Flipper OS — the operating system for Flipper One](https://blog.flipper.net/flipper-os-the-operating-system-for-flipper-one/) (August 2026) - Flipper OS as a layer on top of Debian that switches between preconfigured system profiles. _(Articles and announcements)_
+- [FlipCTL — Our GUI Framework for Embedded Linux Systems](https://blog.flipper.net/flipctl-our-gui-framework-for-embedded-linux-systems/) (June 2026) - Why Flipper One needs a built-in UI and how FlipCTL works. _(Articles and announcements)_
+
+</details>
+
 ## Contents
 
+- [At a glance](#at-a-glance)
 - [Official resources](#official-resources)
 - [Sub-projects](#sub-projects)
 - [Hardware](#hardware)
@@ -22,6 +71,26 @@ This list tracks what's currently public, what's being worked on, and where to p
 - [Community](#community)
 - [Articles and announcements](#articles-and-announcements)
 - [Contributing to this list](#contributing-to-this-list)
+- [License](#license)
+
+## At a glance
+
+How the entries split between official Flipper Devices sources, community projects, and third-party vendor references. Official means `flipper.net` sites, the `flipperdevices` GitHub org, and Flipper's own channels. Each link is counted once, in the first section where it appears.
+
+| Section | Official | Community | Third-party reference |
+|---|---:|---:|---:|
+| [Official resources](#official-resources) | 7 | 0 | 0 |
+| [Sub-projects](#sub-projects) | 7 | 0 | 0 |
+| [Hardware](#hardware) | 9 | 0 | 2 |
+| [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 8 | 0 | 0 |
+| [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 11 | 0 | 0 |
+| [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
+| [Testing and developer tooling](#testing-and-developer-tooling) | 0 | 0 | 1 |
+| [Community tools](#community-tools) | 0 | 9 | 0 |
+| [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
+| [Community](#community) | 3 | 0 | 0 |
+| [Articles and announcements](#articles-and-announcements) | 3 | 0 | 0 |
+| **Total** | **56** | **10** | **3** |
 
 ## Official resources
 
@@ -161,6 +230,8 @@ To add a resource:
 2. Format: `- [Name](URL) - One-line description.` (one sentence, period at the end).
 3. Keep it about Flipper **One** specifically. Resources that are equally about Flipper Zero belong in [awesome-flipperzero](https://github.com/djsime1/awesome-flipperzero).
 4. Prefer primary sources (official docs, vendor datasheets, repos) over secondary write-ups.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full rules, or [suggest a project](https://github.com/hypery11/awesome-flipper-one/issues/new?template=suggest-project.yml) with the issue form.
 
 ## License
 

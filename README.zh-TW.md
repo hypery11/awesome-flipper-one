@@ -1,5 +1,9 @@
 # Awesome Flipper One [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+![Awesome Flipper One](assets/banner.png)
+
+[![Entries](https://img.shields.io/badge/entries-69-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--21-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+
 [English](README.md) | 繁體中文
 
 > 精選 [Flipper One](https://blog.flipper.net/flipper-one-we-need-your-help/) 相關資源。Flipper One 是 Flipper Devices 推出的開源可攜式 Linux 多功能工具，目前正由社群積極參與開發中。
@@ -8,8 +12,53 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 這份清單整理目前已公開的內容、正在進行的工作，以及可以從哪裡加入。
 
+## 本週新增
+
+2026-10-15 至 2026-10-21 新增的條目（依 git 紀錄整理）。
+
+- [Dev Log](https://docs.flipper.net/one/dev-log) - 定期的開發進度報告，涵蓋各子專案。第 10 篇說明如何在 Flipper One 出貨前，先在支援的 RK3576 開發板上跑 Flipper OS。 _(官方資源)_
+- [Community projects page](https://docs.flipper.net/one/community) - 官方的社群 Flipper One 專案索引，透過對 `flipperone-docs` 發 PR 加入。 _(官方資源)_
+- [M.2 modules](https://docs.flipper.net/one/hardware/m2-port/modules) - 可擴充 Flipper One 的市售 M.2 模組類別，另有衛星數據機和 GNSS 接收器子頁面。 _(硬體)_
+- [Power subsystem](https://docs.flipper.net/one/hardware/power-subsystem) - 2 芯鋰離子電池、USB-C1 的 USB PD 充電，以及由 RP2350 控制的 DC/DC 轉換器。 _(硬體)_
+- [Debug Probe docs](https://docs.flipper.net/one/hardware/debug-probe) - 以 RP2350 為核心的除錯器，用排線接到背板後方的除錯埠。 _(硬體)_
+- [flipperone-debug-probe](https://github.com/flipperdevices/flipperone-debug-probe) - Debug Probe 的韌體，CI 會產出 `.uf2` 檔，可用來除錯 MCU 和 CPU。 _(硬體)_
+- [How to install a Linux image](https://docs.flipper.net/one/cpu-software/how-to-install-linux-image) - 用裝置上的安裝程式或手動燒錄，把 Flipper OS 裝到 microSD 或 UFS。 _(開機、核心與使用者空間)_
+- [Supported boards](https://docs.flipper.net/one/cpu-software/supported-boards) - 可執行官方 Flipper OS 映像的 RK3576 開發板，附 target 名稱、開機優先順序和 MaskROM 操作說明。 _(開機、核心與使用者空間)_
+
+<details>
+<summary>本週另外新增 25 條</summary>
+
+- [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - RK3576 如何選擇開機裝置，以及如何透過 USB 燒錄。 _(開機、核心與使用者空間)_
+- [Flipper OS docs](https://docs.flipper.net/one/cpu-software/flipper-os) - Flipper OS 的設計概念：在 Debian 之上可切換的 OS 設定檔（profile）。 _(Flipper OS 與 FlipCTL)_
+- [FlipCTL docs](https://docs.flipper.net/one/cpu-software/flipctl) - 驅動裝置螢幕、網頁瀏覽器和 SSH 控制介面的 UI 框架。 _(Flipper OS 與 FlipCTL)_
+- [flipctl](https://github.com/flipperdevices/flipctl) - FlipCTL 原始碼：後端包裝 systemd、網路設定和命令列工具，前端用 HTML/JS。 _(Flipper OS 與 FlipCTL)_
+- [flipctl-slint](https://github.com/flipperdevices/flipctl-slint) - 用 Slint 實作的 Flipper One UI，給 256×144 SPI 面板使用，安裝程式和開機選單共用。 _(Flipper OS 與 FlipCTL)_
+- [flipctl-fonts](https://github.com/flipperdevices/flipctl-fonts) - 為 FlipCTL UI 調整過的像素字型。 _(Flipper OS 與 FlipCTL)_
+- [flipctl-apps](https://github.com/flipperdevices/flipctl-apps) - Flipper One 應用程式管理器可安裝之 App 的目錄（`apps.toml`）與發行下載，例如測試工具、瀏覽器與遊戲。 _(Flipper OS 與 FlipCTL)_
+- [flipperos-installer](https://github.com/flipperdevices/flipperos-installer) - 從 initramfs 執行、把 Flipper OS 裝到 RK3576 開發板上的 Rust 安裝程式，有 TUI 和螢幕 GUI。 _(Flipper OS 與 FlipCTL)_
+- [flipperos-installer-initramfs](https://github.com/flipperdevices/flipperos-installer-initramfs) - 產生執行安裝程式所需 initramfs 的 Buildroot 配方。 _(Flipper OS 與 FlipCTL)_
+- [flipperos-boot-menu](https://github.com/flipperdevices/flipperos-boot-menu) - Buildroot initramfs，在螢幕上列出可開機的設定檔，再用 kexec 進入選中的那一個。 _(Flipper OS 與 FlipCTL)_
+- [flipperos-recovery](https://github.com/flipperdevices/flipperos-recovery) - 最小化、不可變的救援 initramfs，完全在 RAM 中執行，因此可以重新燒錄儲存裝置。 _(Flipper OS 與 FlipCTL)_
+- [flipperos-btrfs-tools](https://github.com/flipperdevices/flipperos-btrfs-tools) - 管理 btrfs OS 設定檔、快照和 BLS 開機項目的 POSIX sh 工具。 _(Flipper OS 與 FlipCTL)_
+- [How to build firmware](https://docs.flipper.net/one/mcu-firmware/how-to-build-firmware) - 從原始碼編出 MCU 的 `.uf2`，再透過 USB 上傳。 _(MCU 韌體)_
+- [flipperone-mcu-protobuf](https://github.com/flipperdevices/flipperone-mcu-protobuf) - MCU RPC 協定的 protobuf 定義，MCU 韌體以 submodule 引用。 _(MCU 韌體)_
+- [fbtng-corelibs](https://github.com/flipperdevices/fbtng-corelibs) - MCU 韌體中以 `lib/corelibs` 引入的核心函式庫。 _(MCU 韌體)_
+- [Flipper One Lab](https://github.com/kalicyh/flipperone-lab) - 容器映像，可在桌機瀏覽器中執行公開的使用者空間和 `fake-flipctl2` UI 測試環境。已列在官方社群頁面。 _(社群工具)_
+- [QEMU Flipper OS](https://github.com/Gelules/qemu-flipperos) - 在 Linux PC 上用 QEMU 開機官方 Flipper OS 建置的腳本，FlipCTL 在瀏覽器中顯示。 _(社群工具)_
+- [Bad Apple!! on Flipper One](https://github.com/Gelules/flipperone-bad-apple) - 兩個在 256×144 面板上播放 Bad Apple!! 的 Python FlipCTL App（灰階與 1-bit），目前在 QEMU 中測試。 _(社群工具)_
+- [Flipper One VM](https://github.com/plusmalias/flipper-one-vm) - 在 Intel Mac 上用 QEMU 執行官方 Flipper OS 映像，附即時前面板 UI 和 SSH。 _(社群工具)_
+- [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - 非官方 Apple Silicon App，在本機 VM 開機 Flipper OS，並在 macOS 視窗中顯示 FlipCTL。 _(社群工具)_
+- [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs 的 OS 設定檔管理工具，是 `flipperone-linux-build-scripts` 一項 RFC 的實作版本。 _(社群工具)_
+- [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Flipper OS 儲存架構 RFC 的本機概念驗證（squashfs + dm-verity，以及全 Btrfs 的替代方案）。 _(社群工具)_
+- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - 社群嘗試做出開源 DDR trainer，取代開機流程中封閉的 RK3576 DDR blob。 _(社群工具)_
+- [Flipper OS — the operating system for Flipper One](https://blog.flipper.net/flipper-os-the-operating-system-for-flipper-one/)（2026 年 8 月） - Flipper OS 是 Debian 之上的一層，可在預先設定好的系統設定檔之間切換。 _(文章與公告)_
+- [FlipCTL — Our GUI Framework for Embedded Linux Systems](https://blog.flipper.net/flipctl-our-gui-framework-for-embedded-linux-systems/)（2026 年 6 月） - 為什麼 Flipper One 需要內建 UI，以及 FlipCTL 的運作方式。 _(文章與公告)_
+
+</details>
+
 ## 目錄
 
+- [一覽比較](#一覽比較)
 - [官方資源](#官方資源)
 - [子專案](#子專案)
 - [硬體](#硬體)
@@ -22,6 +71,26 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [社群](#社群)
 - [文章與公告](#文章與公告)
 - [如何貢獻這份清單](#如何貢獻這份清單)
+- [授權](#授權)
+
+## 一覽比較
+
+條目在官方 Flipper Devices 來源、社群專案和第三方廠商參考資料之間的分布。官方指 `flipper.net` 網站、`flipperdevices` GitHub 組織和 Flipper 自己的頻道。每個連結只算一次，計在第一次出現的章節。
+
+| 章節 | 官方 | 社群 | 第三方參考 |
+|---|---:|---:|---:|
+| [官方資源](#官方資源) | 7 | 0 | 0 |
+| [子專案](#子專案) | 7 | 0 | 0 |
+| [硬體](#硬體) | 9 | 0 | 2 |
+| [開機、核心與使用者空間](#開機核心與使用者空間) | 8 | 0 | 0 |
+| [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 11 | 0 | 0 |
+| [MCU 韌體](#mcu-韌體) | 5 | 0 | 0 |
+| [測試與開發工具](#測試與開發工具) | 0 | 0 | 1 |
+| [社群工具](#社群工具) | 0 | 9 | 0 |
+| [相關生態系](#相關生態系) | 3 | 1 | 0 |
+| [社群](#社群) | 3 | 0 | 0 |
+| [文章與公告](#文章與公告) | 3 | 0 | 0 |
+| **合計** | **56** | **10** | **3** |
 
 ## 官方資源
 
@@ -161,6 +230,8 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 2. 格式：`- [Name](URL) - One-line description.`（一句話，句尾加句號）。
 3. 只收 Flipper **One** 專屬的資源。同樣適用 Flipper Zero 的資源請放到 [awesome-flipperzero](https://github.com/djsime1/awesome-flipperzero)。
 4. 優先收第一手來源（官方文件、廠商 datasheet、repo），而不是二手整理。
+
+完整規則見 [CONTRIBUTING.md](CONTRIBUTING.md)，也可以用 issue 表單[推薦專案](https://github.com/hypery11/awesome-flipper-one/issues/new?template=suggest-project.yml)。
 
 ## 授權
 
