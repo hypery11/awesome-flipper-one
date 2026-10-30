@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-72-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-74-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,10 +14,12 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-10-22 至 2026-10-28 新增的條目（依 git 紀錄整理）。
+2026-10-24 至 2026-10-30 新增的條目（依 git 紀錄整理）。
 
 - [uMTP-Responder fork](https://github.com/flipperdevices/uMTP-Responder) - Flipper 分支的 USB MTP 回應常駐程式；`flipper-devel` 分支加入電量、裝置類型與 SuperSpeed 描述元等修改，Flipper One 建置腳本與 Flipper OS 復原映像都設定了 `umtprd`。 _(開機、核心與使用者空間)_
 - [5G Modem app](https://docs.flipper.net/one/cpu-software/flipctl/5g-modem-app) - FlipCTL 行動網路數據機畫面的需求與規劃，透過 D-Bus 讀取 ModemManager；截圖來自搭載 Quectel RM520N-GL 的原型。 _(Flipper OS 與 FlipCTL)_
+- [Dolphone](https://github.com/isaacrowntree/dolphone) - 非官方的 Flipper One 通話與簡訊套件，需在 M.2 槽裝行動數據機：面板上的 FlipCTL 撥號與簡訊 App、桌面 App 和 `phonectl` 命令列工具，支援藍牙耳機與 SIP 通話。屬業餘軟體，不可用於緊急求救。 _(社群工具)_
+- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。 _(社群工具)_
 - [Dev Log #11：讓 Flipper One 真正可攜](https://docs.flipper.net/one/dev-log/11)（2026 年 10 月） - 耗電實測：執行 Linux 時 0.96 W，24 Wh 電池最長可用 24 小時，並與 Raspberry Pi 5B 比較。 _(文章與公告)_
 
 ## 目錄
@@ -50,11 +52,11 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 | [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 11 | 0 | 0 |
 | [MCU 韌體](#mcu-韌體) | 5 | 0 | 0 |
 | [測試與開發工具](#測試與開發工具) | 0 | 0 | 1 |
-| [社群工具](#社群工具) | 0 | 9 | 0 |
+| [社群工具](#社群工具) | 0 | 11 | 0 |
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
 | [文章與公告](#文章與公告) | 3 | 0 | 0 |
-| **合計** | **56** | **10** | **3** |
+| **合計** | **56** | **12** | **3** |
 
 ## 官方資源
 
@@ -162,6 +164,8 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs 的 OS 設定檔管理工具，是 `flipperone-linux-build-scripts` 一項 RFC 的實作版本。
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Flipper OS 儲存架構 RFC 的本機概念驗證（squashfs + dm-verity，以及全 Btrfs 的替代方案）。
 - [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - 社群嘗試做出開源 DDR trainer，取代開機流程中封閉的 RK3576 DDR blob。
+- [Dolphone](https://github.com/isaacrowntree/dolphone) - 非官方的 Flipper One 通話與簡訊套件，需在 M.2 槽裝行動數據機：面板上的 FlipCTL 撥號與簡訊 App、桌面 App 和 `phonectl` 命令列工具，支援藍牙耳機與 SIP 通話。屬業餘軟體，不可用於緊急求救。
+- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。
 
 ## 相關生態系
 

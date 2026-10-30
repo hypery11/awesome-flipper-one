@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-72-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--28-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-74-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,10 +14,12 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-10-22 and 2026-10-28 (derived from git history).
+Added between 2026-10-24 and 2026-10-30 (derived from git history).
 
 - [uMTP-Responder fork](https://github.com/flipperdevices/uMTP-Responder) - Flipper's fork of the USB MTP responder daemon; its `flipper-devel` branch adds battery level, device-type and SuperSpeed descriptor changes, and `umtprd` is configured in the Flipper One build scripts and Flipper OS recovery image. _(Boot, kernel, and userspace)_
 - [5G Modem app](https://docs.flipper.net/one/cpu-software/flipctl/5g-modem-app) - Requirements and plan for FlipCTL's cellular modem screen, which reads ModemManager over D-Bus; screenshots come from a prototype running a Quectel RM520N-GL. _(Flipper OS and FlipCTL)_
+- [Dolphone](https://github.com/isaacrowntree/dolphone) - Unofficial calls and texts for a Flipper One with a cellular modem in the M.2 slot: FlipCTL dialer and messages apps on the panel, a desktop app, and a `phonectl` shell tool, with Bluetooth headsets and SIP calling. Hobby software, not for emergencies. _(Community tools)_
+- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux. _(Community tools)_
 - [Dev Log #11: Making Flipper One truly portable](https://docs.flipper.net/one/dev-log/11) (October 2026) - Power measurements: 0.96 W with Linux running and up to 24 hours on the 24 Wh battery, compared with a Raspberry Pi 5B. _(Articles and announcements)_
 
 ## Contents
@@ -50,11 +52,11 @@ How the entries split between official Flipper Devices sources, community projec
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 11 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
 | [Testing and developer tooling](#testing-and-developer-tooling) | 0 | 0 | 1 |
-| [Community tools](#community-tools) | 0 | 9 | 0 |
+| [Community tools](#community-tools) | 0 | 11 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 3 | 0 | 0 |
-| **Total** | **56** | **10** | **3** |
+| **Total** | **56** | **12** | **3** |
 
 ## Official resources
 
@@ -162,6 +164,8 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs OS profile manager, built as a working version of an RFC in `flipperone-linux-build-scripts`.
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Local proof of concept for the Flipper OS storage architecture RFC (squashfs + dm-verity and an all-Btrfs alternative).
 - [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - Community attempt at an open DDR trainer to replace the closed RK3576 DDR blob in the boot chain.
+- [Dolphone](https://github.com/isaacrowntree/dolphone) - Unofficial calls and texts for a Flipper One with a cellular modem in the M.2 slot: FlipCTL dialer and messages apps on the panel, a desktop app, and a `phonectl` shell tool, with Bluetooth headsets and SIP calling. Hobby software, not for emergencies.
+- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux.
 
 ## Adjacent ecosystems
 
