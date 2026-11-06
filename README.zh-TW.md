@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-74-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-75-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--06-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,13 +14,9 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-10-24 至 2026-10-30 新增的條目（依 git 紀錄整理）。
+2026-10-31 至 2026-11-06 新增的條目（依 git 紀錄整理）。
 
-- [uMTP-Responder fork](https://github.com/flipperdevices/uMTP-Responder) - Flipper 分支的 USB MTP 回應常駐程式；`flipper-devel` 分支加入電量、裝置類型與 SuperSpeed 描述元等修改，Flipper One 建置腳本與 Flipper OS 復原映像都設定了 `umtprd`。 _(開機、核心與使用者空間)_
-- [5G Modem app](https://docs.flipper.net/one/cpu-software/flipctl/5g-modem-app) - FlipCTL 行動網路數據機畫面的需求與規劃，透過 D-Bus 讀取 ModemManager；截圖來自搭載 Quectel RM520N-GL 的原型。 _(Flipper OS 與 FlipCTL)_
-- [Dolphone](https://github.com/isaacrowntree/dolphone) - 非官方的 Flipper One 通話與簡訊套件，需在 M.2 槽裝行動數據機：面板上的 FlipCTL 撥號與簡訊 App、桌面 App 和 `phonectl` 命令列工具，支援藍牙耳機與 SIP 通話。屬業餘軟體，不可用於緊急求救。 _(社群工具)_
-- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。 _(社群工具)_
-- [Dev Log #11：讓 Flipper One 真正可攜](https://docs.flipper.net/one/dev-log/11)（2026 年 10 月） - 耗電實測：執行 Linux 時 0.96 W，24 Wh 電池最長可用 24 小時，並與 Raspberry Pi 5B 比較。 _(文章與公告)_
+- [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方以 20 美元可退款預約券，保留 Kickstarter 開跑後以約 379 美元購入限量機的資格（預計 2026 年 11 月）；目前不是直接買到機器，價格與時程仍可能調整。 _(官方資源)_
 
 ## 目錄
 
@@ -45,7 +41,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 | 章節 | 官方 | 社群 | 第三方參考 |
 |---|---:|---:|---:|
-| [官方資源](#官方資源) | 7 | 0 | 0 |
+| [官方資源](#官方資源) | 8 | 0 | 0 |
 | [子專案](#子專案) | 7 | 0 | 0 |
 | [硬體](#硬體) | 9 | 0 | 2 |
 | [開機、核心與使用者空間](#開機核心與使用者空間) | 8 | 0 | 0 |
@@ -56,11 +52,12 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
 | [文章與公告](#文章與公告) | 3 | 0 | 0 |
-| **合計** | **56** | **12** | **3** |
+| **合計** | **57** | **12** | **3** |
 
 ## 官方資源
 
 - [Developer portal](https://docs.flipper.net/one) - 官方入口，從這裡開始。
+- [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方以 20 美元可退款預約券，保留 Kickstarter 開跑後以約 379 美元購入限量機的資格（預計 2026 年 11 月）；目前不是直接買到機器，價格與時程仍可能調整。
 - [Open tasks](https://docs.flipper.net/one/open-tasks) - 從所有子專案 repo 的 `help wanted` issue 自動產生，由 docs repo 的 CI 定期更新。
 - [Tech specs](https://docs.flipper.net/one/general/tech-specs) - RK3576、RP2350、MT7921AUN、M.2 Key-B（S3）、螢幕、電池、連接埠。
 - [How to join](https://docs.flipper.net/one/how-to-join) - 送出第一個 PR 前建議先讀。

@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-74-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--10--30-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-75-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--06-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,13 +14,9 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-10-24 and 2026-10-30 (derived from git history).
+Added between 2026-10-31 and 2026-11-06 (derived from git history).
 
-- [uMTP-Responder fork](https://github.com/flipperdevices/uMTP-Responder) - Flipper's fork of the USB MTP responder daemon; its `flipper-devel` branch adds battery level, device-type and SuperSpeed descriptor changes, and `umtprd` is configured in the Flipper One build scripts and Flipper OS recovery image. _(Boot, kernel, and userspace)_
-- [5G Modem app](https://docs.flipper.net/one/cpu-software/flipctl/5g-modem-app) - Requirements and plan for FlipCTL's cellular modem screen, which reads ModemManager over D-Bus; screenshots come from a prototype running a Quectel RM520N-GL. _(Flipper OS and FlipCTL)_
-- [Dolphone](https://github.com/isaacrowntree/dolphone) - Unofficial calls and texts for a Flipper One with a cellular modem in the M.2 slot: FlipCTL dialer and messages apps on the panel, a desktop app, and a `phonectl` shell tool, with Bluetooth headsets and SIP calling. Hobby software, not for emergencies. _(Community tools)_
-- [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux. _(Community tools)_
-- [Dev Log #11: Making Flipper One truly portable](https://docs.flipper.net/one/dev-log/11) (October 2026) - Power measurements: 0.96 W with Linux running and up to 24 hours on the 24 Wh battery, compared with a Raspberry Pi 5B. _(Articles and announcements)_
+- [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon for a limited run at an estimated $379 once the Kickstarter campaign opens (planned for November 2026); not a device purchase yet, and price or timing can still change. _(Official resources)_
 
 ## Contents
 
@@ -45,7 +41,7 @@ How the entries split between official Flipper Devices sources, community projec
 
 | Section | Official | Community | Third-party reference |
 |---|---:|---:|---:|
-| [Official resources](#official-resources) | 7 | 0 | 0 |
+| [Official resources](#official-resources) | 8 | 0 | 0 |
 | [Sub-projects](#sub-projects) | 7 | 0 | 0 |
 | [Hardware](#hardware) | 9 | 0 | 2 |
 | [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 8 | 0 | 0 |
@@ -56,11 +52,12 @@ How the entries split between official Flipper Devices sources, community projec
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 3 | 0 | 0 |
-| **Total** | **56** | **12** | **3** |
+| **Total** | **57** | **12** | **3** |
 
 ## Official resources
 
 - [Developer portal](https://docs.flipper.net/one) - The canonical entry point. Start here.
+- [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon for a limited run at an estimated $379 once the Kickstarter campaign opens (planned for November 2026); not a device purchase yet, and price or timing can still change.
 - [Open tasks](https://docs.flipper.net/one/open-tasks) - Auto-generated from `help wanted` issues across all sub-project repos. Refreshed by CI in the docs repo.
 - [Tech specs](https://docs.flipper.net/one/general/tech-specs) - RK3576, RP2350, MT7921AUN, M.2 Key-B (S3), display, battery, ports.
 - [How to join](https://docs.flipper.net/one/how-to-join) - Recommended reading before opening your first PR.
