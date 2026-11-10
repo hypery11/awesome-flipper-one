@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-77-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-79-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,8 +14,10 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-03 至 2026-11-09 新增的條目（依 git 紀錄整理）。
+2026-11-04 至 2026-11-10 新增的條目（依 git 紀錄整理）。
 
+- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。 _(開機、核心與使用者空間)_
+- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。 _(社群工具)_
 - [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方以 20 美元可退款預約券，保留 Kickstarter 開跑後以約 379 美元購入限量機的資格（預計 2026 年 11 月）；目前不是直接買到機器，價格與時程仍可能調整。 _(官方資源)_
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。 _(社群工具)_
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - 給 Flipper OS 用的 ARM64 AppImage，可針對網域、IP、電子郵件或公開帳號描繪其公開基礎設施（DNS、RDAP、TLS、子網域、即時 TCP 埠掃描與服務 banner、Shodan InternetDB 資料），相關技術皆以 Go 原生重寫；定位是基礎設施偵察，不做找人。 _(社群工具)_
@@ -120,6 +122,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [How to install a Linux image](https://docs.flipper.net/one/cpu-software/how-to-install-linux-image) - 用裝置上的安裝程式或手動燒錄，把 Flipper OS 裝到 microSD 或 UFS。
 - [Supported boards](https://docs.flipper.net/one/cpu-software/supported-boards) - 可執行官方 Flipper OS 映像的 RK3576 開發板，附 target 名稱、開機優先順序和 MaskROM 操作說明。
 - [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - RK3576 如何選擇開機裝置，以及如何透過 USB 燒錄。
+- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。
 
 ## Flipper OS 與 FlipCTL
 
@@ -167,6 +170,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - 給 Flipper OS 用的 ARM64 AppImage，可針對網域、IP、電子郵件或公開帳號描繪其公開基礎設施（DNS、RDAP、TLS、子網域、即時 TCP 埠掃描與服務 banner、Shodan InternetDB 資料），相關技術皆以 Go 原生重寫；定位是基礎設施偵察，不做找人。
+- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。
 
 ## 相關生態系
 

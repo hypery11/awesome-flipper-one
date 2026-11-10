@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-77-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--09-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-79-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,8 +14,10 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-03 and 2026-11-09 (derived from git history).
+Added between 2026-11-04 and 2026-11-10 (derived from git history).
 
+- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - Community mainline bring-up of the RK3576 NPU (the `rocket` driver and Mesa Teflon work) on a Radxa ROCK 4D, with the companion [charsiu](https://github.com/gahingwoo/charsiu) open LLM runtime; not Flipper-specific, but it targets the same SoC Flipper One runs mainline Linux on. _(Boot, kernel, and userspace)_
+- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned. _(Community tools)_
 - [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon for a limited run at an estimated $379 once the Kickstarter campaign opens (planned for November 2026); not a device purchase yet, and price or timing can still change. _(Official resources)_
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel. _(Community tools)_
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - ARM64 AppImage for Flipper OS that maps the public infrastructure of a domain, IP, email address or handle (DNS, RDAP, TLS, subdomains, a live TCP port scan with banners, Shodan InternetDB data) with techniques reimplemented natively in Go; scoped to infrastructure recon, not people search. _(Community tools)_
@@ -120,6 +122,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [How to install a Linux image](https://docs.flipper.net/one/cpu-software/how-to-install-linux-image) - Install Flipper OS to microSD or UFS with the on-device installer or by flashing manually.
 - [Supported boards](https://docs.flipper.net/one/cpu-software/supported-boards) - RK3576 boards that run official Flipper OS images, with target names, boot priority, and MaskROM instructions.
 - [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - How the RK3576 picks a boot device and how to flash it over USB.
+- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - Community mainline bring-up of the RK3576 NPU (the `rocket` driver and Mesa Teflon work) on a Radxa ROCK 4D, with the companion [charsiu](https://github.com/gahingwoo/charsiu) open LLM runtime; not Flipper-specific, but it targets the same SoC Flipper One runs mainline Linux on.
 
 ## Flipper OS and FlipCTL
 
@@ -167,6 +170,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux.
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel.
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - ARM64 AppImage for Flipper OS that maps the public infrastructure of a domain, IP, email address or handle (DNS, RDAP, TLS, subdomains, a live TCP port scan with banners, Shodan InternetDB data) with techniques reimplemented natively in Go; scoped to infrastructure recon, not people search.
+- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned.
 
 ## Adjacent ecosystems
 
