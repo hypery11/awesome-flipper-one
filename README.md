@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-79-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--10-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-80-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--12-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,8 +14,9 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-04 and 2026-11-10 (derived from git history).
+Added between 2026-11-06 and 2026-11-12 (derived from git history).
 
+- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi. _(Community tools)_
 - [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - Community mainline bring-up of the RK3576 NPU (the `rocket` driver and Mesa Teflon work) on a Radxa ROCK 4D, with the companion [charsiu](https://github.com/gahingwoo/charsiu) open LLM runtime; not Flipper-specific, but it targets the same SoC Flipper One runs mainline Linux on. _(Boot, kernel, and userspace)_
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned. _(Community tools)_
 - [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon for a limited run at an estimated $379 once the Kickstarter campaign opens (planned for November 2026); not a device purchase yet, and price or timing can still change. _(Official resources)_
@@ -52,11 +53,11 @@ How the entries split between official Flipper Devices sources, community projec
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 11 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
 | [Testing and developer tooling](#testing-and-developer-tooling) | 0 | 0 | 1 |
-| [Community tools](#community-tools) | 0 | 13 | 0 |
+| [Community tools](#community-tools) | 0 | 15 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 3 | 0 | 0 |
-| **Total** | **57** | **14** | **3** |
+| **Total** | **57** | **16** | **3** |
 
 ## Official resources
 
@@ -171,6 +172,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel.
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - ARM64 AppImage for Flipper OS that maps the public infrastructure of a domain, IP, email address or handle (DNS, RDAP, TLS, subdomains, a live TCP port scan with banners, Shodan InternetDB data) with techniques reimplemented natively in Go; scoped to infrastructure recon, not people search.
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned.
+- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi.
 
 ## Adjacent ecosystems
 
