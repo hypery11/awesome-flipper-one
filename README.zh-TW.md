@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-80-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--12-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-81-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--13-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,14 +14,16 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-06 至 2026-11-12 新增的條目（依 git 紀錄整理）。
+2026-11-07 至 2026-11-13 新增的條目（依 git 紀錄整理）。
 
-- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。 _(社群工具)_
 - [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。 _(開機、核心與使用者空間)_
-- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。 _(社群工具)_
-- [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方以 20 美元可退款預約券，保留 Kickstarter 開跑後以約 379 美元購入限量機的資格（預計 2026 年 11 月）；目前不是直接買到機器，價格與時程仍可能調整。 _(官方資源)_
+- [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。 _(開機、核心與使用者空間)_
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。 _(社群工具)_
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - 給 Flipper OS 用的 ARM64 AppImage，可針對網域、IP、電子郵件或公開帳號描繪其公開基礎設施（DNS、RDAP、TLS、子網域、即時 TCP 埠掃描與服務 banner、Shodan InternetDB 資料），相關技術皆以 Go 原生重寫；定位是基礎設施偵察，不做找人。 _(社群工具)_
+- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。 _(社群工具)_
+- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。 _(社群工具)_
+
+---
 
 ## 目錄
 
@@ -124,6 +126,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Supported boards](https://docs.flipper.net/one/cpu-software/supported-boards) - 可執行官方 Flipper OS 映像的 RK3576 開發板，附 target 名稱、開機優先順序和 MaskROM 操作說明。
 - [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - RK3576 如何選擇開機裝置，以及如何透過 USB 燒錄。
 - [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。
+- [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。
 
 ## Flipper OS 與 FlipCTL
 
