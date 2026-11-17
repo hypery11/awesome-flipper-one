@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-81-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--13-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-81-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--17-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,13 +14,10 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-07 and 2026-11-13 (derived from git history).
+Added between 2026-11-11 and 2026-11-17 (derived from git history).
 
-- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - Community mainline bring-up of the RK3576 NPU (the `rocket` driver and Mesa Teflon work) on a Radxa ROCK 4D, with the companion [charsiu](https://github.com/gahingwoo/charsiu) open LLM runtime; not Flipper-specific, but it targets the same SoC Flipper One runs mainline Linux on. _(Boot, kernel, and userspace)_
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - Community helper scripts for running Flipper OS on the 100ASK DshanPi A1 (RK3576): they patch the board DTB and BLS boot entries to fix an xhci kernel panic and eMMC CQE errors, and install Realtek RTL8852CE Wi-Fi firmware into every Flipper OS profile; the companion [U-Boot defconfigs](https://github.com/UdalovIvanw/dshanpi-A1-defconfig) include a Flipper OS variant. _(Boot, kernel, and userspace)_
-- [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel. _(Community tools)_
-- [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - ARM64 AppImage for Flipper OS that maps the public infrastructure of a domain, IP, email address or handle (DNS, RDAP, TLS, subdomains, a live TCP port scan with banners, Shodan InternetDB data) with techniques reimplemented natively in Go; scoped to infrastructure recon, not people search. _(Community tools)_
-- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned. _(Community tools)_
+- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders. _(Testing and developer tooling)_
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi. _(Community tools)_
 
 ---
@@ -157,6 +154,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
   - `fake-flipctl` / `fake-flipctl2` - In-browser device emulators (Node.js + websockets). Lets you develop and screenshot UI without real hardware.
   - `temperature/` - Continuous thermal monitoring with Plotly HTML reports. Works on any RK3576 SBC.
   - `cpu/sbc-bench.sh` - Bundled copy of [sbc-bench](https://github.com/ThomasKaiser/sbc-bench), the standard SBC benchmark tool.
+- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders.
 - [Archbee starter](https://github.com/Archbee/starter) - Docs are built on Archbee. The official Flipper One developer portal is generated from `flipperone-docs` via Archbee's GitHub integration.
 
 ## Community tools
@@ -169,7 +167,6 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - Unofficial Apple Silicon app that boots Flipper OS in a local VM and shows FlipCTL in a macOS window.
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs OS profile manager, built as a working version of an RFC in `flipperone-linux-build-scripts`.
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Local proof of concept for the Flipper OS storage architecture RFC (squashfs + dm-verity and an all-Btrfs alternative).
-- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - Community attempt at an open DDR trainer to replace the closed RK3576 DDR blob in the boot chain.
 - [Dolphone](https://github.com/isaacrowntree/dolphone) - Unofficial calls and texts for a Flipper One with a cellular modem in the M.2 slot: FlipCTL dialer and messages apps on the panel, a desktop app, and a `phonectl` shell tool, with Bluetooth headsets and SIP calling. Hobby software, not for emergencies.
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux.
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel.

@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-81-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--13-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-81-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--17-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,13 +14,10 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-07 至 2026-11-13 新增的條目（依 git 紀錄整理）。
+2026-11-11 至 2026-11-17 新增的條目（依 git 紀錄整理）。
 
-- [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。 _(開機、核心與使用者空間)_
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。 _(開機、核心與使用者空間)_
-- [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。 _(社群工具)_
-- [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - 給 Flipper OS 用的 ARM64 AppImage，可針對網域、IP、電子郵件或公開帳號描繪其公開基礎設施（DNS、RDAP、TLS、子網域、即時 TCP 埠掃描與服務 banner、Shodan InternetDB 資料），相關技術皆以 Go 原生重寫；定位是基礎設施偵察，不做找人。 _(社群工具)_
-- [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。 _(社群工具)_
+- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。 _(測試與開發工具)_
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。 _(社群工具)_
 
 ---
@@ -157,6 +154,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
   - `fake-flipctl` / `fake-flipctl2` - 瀏覽器內的裝置模擬器（Node.js + websockets），沒有實機也能開發 UI 和截圖。
   - `temperature/` - 持續監測溫度並輸出 Plotly HTML 報告，任何 RK3576 開發板都能用。
   - `cpu/sbc-bench.sh` - 內附 [sbc-bench](https://github.com/ThomasKaiser/sbc-bench)，常用的開發板效能測試工具。
+- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。
 - [Archbee starter](https://github.com/Archbee/starter) - 文件建置在 Archbee 上。官方 Flipper One 開發者入口網站是透過 Archbee 的 GitHub 整合，從 `flipperone-docs` 產生。
 
 ## 社群工具
@@ -169,7 +167,6 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - 非官方 Apple Silicon App，在本機 VM 開機 Flipper OS，並在 macOS 視窗中顯示 FlipCTL。
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs 的 OS 設定檔管理工具，是 `flipperone-linux-build-scripts` 一項 RFC 的實作版本。
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Flipper OS 儲存架構 RFC 的本機概念驗證（squashfs + dm-verity，以及全 Btrfs 的替代方案）。
-- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - 社群嘗試做出開源 DDR trainer，取代開機流程中封閉的 RK3576 DDR blob。
 - [Dolphone](https://github.com/isaacrowntree/dolphone) - 非官方的 Flipper One 通話與簡訊套件，需在 M.2 槽裝行動數據機：面板上的 FlipCTL 撥號與簡訊 App、桌面 App 和 `phonectl` 命令列工具，支援藍牙耳機與 SIP 通話。屬業餘軟體，不可用於緊急求救。
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。
