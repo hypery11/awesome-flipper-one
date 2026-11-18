@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-81-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--17-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-82-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,11 +14,12 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-11 and 2026-11-17 (derived from git history).
+Added between 2026-11-12 and 2026-11-18 (derived from git history).
 
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - Community helper scripts for running Flipper OS on the 100ASK DshanPi A1 (RK3576): they patch the board DTB and BLS boot entries to fix an xhci kernel panic and eMMC CQE errors, and install Realtek RTL8852CE Wi-Fi firmware into every Flipper OS profile; the companion [U-Boot defconfigs](https://github.com/UdalovIvanw/dshanpi-A1-defconfig) include a Flipper OS variant. _(Boot, kernel, and userspace)_
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders. _(Testing and developer tooling)_
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi. _(Community tools)_
+- [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself. _(Community tools)_
 
 ---
 
@@ -173,6 +174,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - ARM64 AppImage for Flipper OS that maps the public infrastructure of a domain, IP, email address or handle (DNS, RDAP, TLS, subdomains, a live TCP port scan with banners, Shodan InternetDB data) with techniques reimplemented natively in Go; scoped to infrastructure recon, not people search.
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned.
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi.
+- [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself.
 
 ## Adjacent ecosystems
 

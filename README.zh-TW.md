@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-81-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--17-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-82-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,11 +14,12 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-11 至 2026-11-17 新增的條目（依 git 紀錄整理）。
+2026-11-12 至 2026-11-18 新增的條目（依 git 紀錄整理）。
 
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。 _(開機、核心與使用者空間)_
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。 _(測試與開發工具)_
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。 _(社群工具)_
+- [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。 _(社群工具)_
 
 ---
 
@@ -173,6 +174,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [FlipperOne-OSINT](https://github.com/wasabicover258/FlipperOne-OSINT) - 給 Flipper OS 用的 ARM64 AppImage，可針對網域、IP、電子郵件或公開帳號描繪其公開基礎設施（DNS、RDAP、TLS、子網域、即時 TCP 埠掃描與服務 banner、Shodan InternetDB 資料），相關技術皆以 Go 原生重寫；定位是基礎設施偵察，不做找人。
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。
+- [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。
 
 ## 相關生態系
 
