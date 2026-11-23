@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-82-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-85-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,12 +14,13 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-12 至 2026-11-18 新增的條目（依 git 紀錄整理）。
+2026-11-17 至 2026-11-23 新增的條目（依 git 紀錄整理）。
 
-- [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。 _(開機、核心與使用者空間)_
+- [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - 官方募資活動，用來資助第一批量產，募資期間為 2026 年 11 月 17 日至 12 月 17 日，公開方案 399 美元，預計 2027 年 7 月出貨（依開跑時的媒體報導）。 _(官方資源)_
+- [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - 社群的筆記、建置腳本與修改，在 Flipper One 硬體出貨前，以 Banana Pi BPI-M5 Pro（與 ArmSoM Sige5 相同硬體，Flipper OS 目標名稱 `sige5`）當替代板來執行與建置 Flipper OS：從 microSD 開機的板子 bring-up、Wi-Fi overlay，以及可用的本機映像建置。 _(開機、核心與使用者空間)_
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。 _(測試與開發工具)_
-- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。 _(社群工具)_
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。 _(社群工具)_
+- [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - 用一個腳本在執行 Debian Bookworm 版 Armbian 的 reComputer RK3576 上裝好 FlipCTL 與 DOOM App（dsda-doom 搭配 Freedoom 資料，不需商業版 WAD），再透過 SSH 通道從電腦瀏覽器遊玩。 _(社群工具)_
 
 ---
 
@@ -46,23 +47,24 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 | 章節 | 官方 | 社群 | 第三方參考 |
 |---|---:|---:|---:|
-| [官方資源](#官方資源) | 8 | 0 | 0 |
+| [官方資源](#官方資源) | 9 | 0 | 0 |
 | [子專案](#子專案) | 7 | 0 | 0 |
 | [硬體](#硬體) | 9 | 0 | 2 |
-| [開機、核心與使用者空間](#開機核心與使用者空間) | 8 | 0 | 0 |
-| [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 11 | 0 | 0 |
+| [開機、核心與使用者空間](#開機核心與使用者空間) | 9 | 3 | 0 |
+| [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 12 | 0 | 0 |
 | [MCU 韌體](#mcu-韌體) | 5 | 0 | 0 |
-| [測試與開發工具](#測試與開發工具) | 0 | 0 | 1 |
-| [社群工具](#社群工具) | 0 | 15 | 0 |
+| [測試與開發工具](#測試與開發工具) | 1 | 0 | 1 |
+| [社群工具](#社群工具) | 0 | 16 | 0 |
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
-| [文章與公告](#文章與公告) | 3 | 0 | 0 |
-| **合計** | **57** | **16** | **3** |
+| [文章與公告](#文章與公告) | 4 | 0 | 0 |
+| **合計** | **62** | **20** | **3** |
 
 ## 官方資源
 
 - [Developer portal](https://docs.flipper.net/one) - 官方入口，從這裡開始。
-- [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方以 20 美元可退款預約券，保留 Kickstarter 開跑後以約 379 美元購入限量機的資格（預計 2026 年 11 月）；目前不是直接買到機器，價格與時程仍可能調整。
+- [Flipper One 預購](https://flipper.net/products/flipper-one-preorder) - 官方 20 美元可退款預約券，可解鎖 Kickstarter 募資中 379 美元的方案，比公開方案的 399 美元低 20 美元；本身並不是購買機器。
+- [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - 官方募資活動，用來資助第一批量產，募資期間為 2026 年 11 月 17 日至 12 月 17 日，公開方案 399 美元，預計 2027 年 7 月出貨（依開跑時的媒體報導）。
 - [Open tasks](https://docs.flipper.net/one/open-tasks) - 從所有子專案 repo 的 `help wanted` issue 自動產生，由 docs repo 的 CI 定期更新。
 - [Tech specs](https://docs.flipper.net/one/general/tech-specs) - RK3576、RP2350、MT7921AUN、M.2 Key-B（S3）、螢幕、電池、連接埠。
 - [How to join](https://docs.flipper.net/one/how-to-join) - 送出第一個 PR 前建議先讀。
@@ -125,6 +127,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - RK3576 如何選擇開機裝置，以及如何透過 USB 燒錄。
 - [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - 社群在 Radxa ROCK 4D 上進行的 RK3576 NPU 主線化工作（`rocket` 驅動與 Mesa Teflon），並附帶開源 LLM 執行環境 [charsiu](https://github.com/gahingwoo/charsiu)；並非 Flipper 專屬，但針對的正是 Flipper One 執行主線 Linux 的同一顆 SoC。
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - 社群輔助腳本，讓 Flipper OS 跑在 100ASK DshanPi A1（RK3576）上：修補開發板 DTB 與 BLS 開機項目以修正 xhci 核心崩潰與 eMMC CQE 錯誤，並把 Realtek RTL8852CE Wi-Fi 韌體裝進每個 Flipper OS profile；另附 [U-Boot defconfig](https://github.com/UdalovIvanw/dshanpi-A1-defconfig)，包含 Flipper OS 變體。
+- [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - 社群的筆記、建置腳本與修改，在 Flipper One 硬體出貨前，以 Banana Pi BPI-M5 Pro（與 ArmSoM Sige5 相同硬體，Flipper OS 目標名稱 `sige5`）當替代板來執行與建置 Flipper OS：從 microSD 開機的板子 bring-up、Wi-Fi overlay，以及可用的本機映像建置。
 
 ## Flipper OS 與 FlipCTL
 
@@ -175,6 +178,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - 早期的跨平台（Windows 11 與 Linux）Tauri 桌面輔助程式，透過 SSH 連線 Flipper One：可儲存連線，提供命令主控台與 SFTP 檔案瀏覽器，FlipCTL 控制面板與 btrfs 設定檔快照仍在規劃中。
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。
+- [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - 用一個腳本在執行 Debian Bookworm 版 Armbian 的 reComputer RK3576 上裝好 FlipCTL 與 DOOM App（dsda-doom 搭配 Freedoom 資料，不需商業版 WAD），再透過 SSH 通道從電腦瀏覽器遊玩。
 
 ## 相關生態系
 

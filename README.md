@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-82-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--18-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-85-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,12 +14,13 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-12 and 2026-11-18 (derived from git history).
+Added between 2026-11-17 and 2026-11-23 (derived from git history).
 
-- [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - Community helper scripts for running Flipper OS on the 100ASK DshanPi A1 (RK3576): they patch the board DTB and BLS boot entries to fix an xhci kernel panic and eMMC CQE errors, and install Realtek RTL8852CE Wi-Fi firmware into every Flipper OS profile; the companion [U-Boot defconfigs](https://github.com/UdalovIvanw/dshanpi-A1-defconfig) include a Flipper OS variant. _(Boot, kernel, and userspace)_
+- [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - Official crowdfunding campaign for the first production run, open from November 17 to December 17, 2026, with a $399 public tier and shipping estimated for July 2027 (per launch coverage). _(Official resources)_
+- [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - Community notes, build scripts and changes for running and building Flipper OS on a Banana Pi BPI-M5 Pro (the same hardware as the ArmSoM Sige5, Flipper OS target `sige5`) as a stand-in until Flipper One hardware is available: board bring-up from microSD, a Wi-Fi overlay and a working local image build. _(Boot, kernel, and userspace)_
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders. _(Testing and developer tooling)_
-- [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi. _(Community tools)_
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself. _(Community tools)_
+- [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel. _(Community tools)_
 
 ---
 
@@ -46,23 +47,24 @@ How the entries split between official Flipper Devices sources, community projec
 
 | Section | Official | Community | Third-party reference |
 |---|---:|---:|---:|
-| [Official resources](#official-resources) | 8 | 0 | 0 |
+| [Official resources](#official-resources) | 9 | 0 | 0 |
 | [Sub-projects](#sub-projects) | 7 | 0 | 0 |
 | [Hardware](#hardware) | 9 | 0 | 2 |
-| [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 8 | 0 | 0 |
-| [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 11 | 0 | 0 |
+| [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 9 | 3 | 0 |
+| [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 12 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
-| [Testing and developer tooling](#testing-and-developer-tooling) | 0 | 0 | 1 |
-| [Community tools](#community-tools) | 0 | 15 | 0 |
+| [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 0 | 1 |
+| [Community tools](#community-tools) | 0 | 16 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
-| [Articles and announcements](#articles-and-announcements) | 3 | 0 | 0 |
-| **Total** | **57** | **16** | **3** |
+| [Articles and announcements](#articles-and-announcements) | 4 | 0 | 0 |
+| **Total** | **62** | **20** | **3** |
 
 ## Official resources
 
 - [Developer portal](https://docs.flipper.net/one) - The canonical entry point. Start here.
-- [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon for a limited run at an estimated $379 once the Kickstarter campaign opens (planned for November 2026); not a device purchase yet, and price or timing can still change.
+- [Flipper One Pre-order](https://flipper.net/products/flipper-one-preorder) - Official $20 refundable reservation coupon that unlocks a $379 tier in the Kickstarter campaign, $20 below the $399 public tier; not a device purchase by itself.
+- [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - Official crowdfunding campaign for the first production run, open from November 17 to December 17, 2026, with a $399 public tier and shipping estimated for July 2027 (per launch coverage).
 - [Open tasks](https://docs.flipper.net/one/open-tasks) - Auto-generated from `help wanted` issues across all sub-project repos. Refreshed by CI in the docs repo.
 - [Tech specs](https://docs.flipper.net/one/general/tech-specs) - RK3576, RP2350, MT7921AUN, M.2 Key-B (S3), display, battery, ports.
 - [How to join](https://docs.flipper.net/one/how-to-join) - Recommended reading before opening your first PR.
@@ -125,6 +127,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Rockchip MaskROM mode](https://docs.flipper.net/one/cpu-software/maskrom-mode) - How the RK3576 picks a boot device and how to flash it over USB.
 - [linux-rk3576-npu](https://github.com/gahingwoo/linux-rk3576-npu) - Community mainline bring-up of the RK3576 NPU (the `rocket` driver and Mesa Teflon work) on a Radxa ROCK 4D, with the companion [charsiu](https://github.com/gahingwoo/charsiu) open LLM runtime; not Flipper-specific, but it targets the same SoC Flipper One runs mainline Linux on.
 - [DshanPi-FlipperOS-linux-scripts](https://github.com/UdalovIvanw/DshanPi-FlipperOS-linux-scripts) - Community helper scripts for running Flipper OS on the 100ASK DshanPi A1 (RK3576): they patch the board DTB and BLS boot entries to fix an xhci kernel panic and eMMC CQE errors, and install Realtek RTL8852CE Wi-Fi firmware into every Flipper OS profile; the companion [U-Boot defconfigs](https://github.com/UdalovIvanw/dshanpi-A1-defconfig) include a Flipper OS variant.
+- [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - Community notes, build scripts and changes for running and building Flipper OS on a Banana Pi BPI-M5 Pro (the same hardware as the ArmSoM Sige5, Flipper OS target `sige5`) as a stand-in until Flipper One hardware is available: board bring-up from microSD, a Wi-Fi overlay and a working local image build.
 
 ## Flipper OS and FlipCTL
 
@@ -175,6 +178,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [FlipDeck](https://github.com/jplongley-prog/flipdeck) - Early cross-platform (Windows 11 and Linux) Tauri desktop companion that talks to Flipper One over SSH: saved connections, a command console and an SFTP file browser, with a FlipCTL control panel and btrfs profile snapshots planned.
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi.
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself.
+- [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel.
 
 ## Adjacent ecosystems
 
