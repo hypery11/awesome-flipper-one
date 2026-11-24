@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-85-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-88-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,13 +14,15 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-17 至 2026-11-23 新增的條目（依 git 紀錄整理）。
+2026-11-18 至 2026-11-24 新增的條目（依 git 紀錄整理）。
 
 - [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - 官方募資活動，用來資助第一批量產，募資期間為 2026 年 11 月 17 日至 12 月 17 日，公開方案 399 美元，預計 2027 年 7 月出貨（依開跑時的媒體報導）。 _(官方資源)_
 - [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - 社群的筆記、建置腳本與修改，在 Flipper One 硬體出貨前，以 Banana Pi BPI-M5 Pro（與 ArmSoM Sige5 相同硬體，Flipper OS 目標名稱 `sige5`）當替代板來執行與建置 Flipper OS：從 microSD 開機的板子 bring-up、Wi-Fi overlay，以及可用的本機映像建置。 _(開機、核心與使用者空間)_
-- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。 _(測試與開發工具)_
+- [flipperone-profileguard](https://github.com/Avimuller1102/flipperone-profileguard) - 社群製作、不需硬體的安全測試，以合成情境執行 `flipperos-btrfs-tools` 裡真正的 `flipper-accountdb.awk`，檢查 Flipper OS 把設定檔移到較新版本時如何合併 `passwd`、`shadow`、`group` 與 `gshadow`。 _(測試與開發工具)_
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。 _(社群工具)_
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - 用一個腳本在執行 Debian Bookworm 版 Armbian 的 reComputer RK3576 上裝好 FlipCTL 與 DOOM App（dsda-doom 搭配 Freedoom 資料，不需商業版 WAD），再透過 SSH 通道從電腦瀏覽器遊玩。 _(社群工具)_
+- [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - 非官方的 Flipper One OS x86_64 可開機 Live ISO（Debian 13），供 VirtualBox 或 VMware 使用，以未修改的官方 `flipperone-linux-build-scripts`、`flipctl-slint` 與 `flipctl-apps` 建置：掌機模式只顯示 FlipCTL，用鍵盤與滑鼠操作；另有 KDE Plasma 桌面模式，Wi-Fi 為模擬。 _(社群工具)_
+- [pocketfuzz](https://github.com/interfecto/pocketfuzz) - 用來測試自己裝置的網路模糊測試工具，重播錄下的連線（JSON 或 pcap），每個案例只改一則訊息，探測目標並保存故障前的案例；Python 引擎與命令列已可使用，Flipper One App 尚未在實機上執行過。 _(社群工具)_
 
 ---
 
@@ -53,12 +55,12 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 | [開機、核心與使用者空間](#開機核心與使用者空間) | 9 | 3 | 0 |
 | [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 12 | 0 | 0 |
 | [MCU 韌體](#mcu-韌體) | 5 | 0 | 0 |
-| [測試與開發工具](#測試與開發工具) | 1 | 0 | 1 |
-| [社群工具](#社群工具) | 0 | 16 | 0 |
+| [測試與開發工具](#測試與開發工具) | 1 | 1 | 1 |
+| [社群工具](#社群工具) | 0 | 18 | 0 |
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
 | [文章與公告](#文章與公告) | 4 | 0 | 0 |
-| **合計** | **62** | **20** | **3** |
+| **合計** | **62** | **23** | **3** |
 
 ## 官方資源
 
@@ -160,6 +162,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
   - `cpu/sbc-bench.sh` - 內附 [sbc-bench](https://github.com/ThomasKaiser/sbc-bench)，常用的開發板效能測試工具。
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - 官方 Python 函式庫（`pip install flipperone`），可從電腦操作 Flipper One：MCU 的命令列介面、透過 SSH 連到主板上的 Linux、Debug Probe，以及 MCU（`picotool`）和 CPU MaskROM（`rockusb`）的 USB 開機載入程式。
 - [Archbee starter](https://github.com/Archbee/starter) - 文件建置在 Archbee 上。官方 Flipper One 開發者入口網站是透過 Archbee 的 GitHub 整合，從 `flipperone-docs` 產生。
+- [flipperone-profileguard](https://github.com/Avimuller1102/flipperone-profileguard) - 社群製作、不需硬體的安全測試，以合成情境執行 `flipperos-btrfs-tools` 裡真正的 `flipper-accountdb.awk`，檢查 Flipper OS 把設定檔移到較新版本時如何合併 `passwd`、`shadow`、`group` 與 `gshadow`。
 
 ## 社群工具
 
@@ -179,6 +182,8 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - 給 CardputerZero 用的 FlipCTL 用戶端，透過有線乙太網路或區網 Wi-Fi，把 Flipper One 的 256×144 灰階畫面顯示在 320×170 的 LVGL 螢幕上，並可送出按鍵操作。
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - 非官方工具，不需 root 就能在 Linux PC 上用 QEMU 執行官方 Flipper One OS：下載官方 Flipper OS 映像、只模擬硬體來開機其核心，並在瀏覽器開啟裝置的遠端畫面；本身不包含任何 Flipper 軟體。
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - 用一個腳本在執行 Debian Bookworm 版 Armbian 的 reComputer RK3576 上裝好 FlipCTL 與 DOOM App（dsda-doom 搭配 Freedoom 資料，不需商業版 WAD），再透過 SSH 通道從電腦瀏覽器遊玩。
+- [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - 非官方的 Flipper One OS x86_64 可開機 Live ISO（Debian 13），供 VirtualBox 或 VMware 使用，以未修改的官方 `flipperone-linux-build-scripts`、`flipctl-slint` 與 `flipctl-apps` 建置：掌機模式只顯示 FlipCTL，用鍵盤與滑鼠操作；另有 KDE Plasma 桌面模式，Wi-Fi 為模擬。
+- [pocketfuzz](https://github.com/interfecto/pocketfuzz) - 用來測試自己裝置的網路模糊測試工具，重播錄下的連線（JSON 或 pcap），每個案例只改一則訊息，探測目標並保存故障前的案例；Python 引擎與命令列已可使用，Flipper One App 尚未在實機上執行過。
 
 ## 相關生態系
 

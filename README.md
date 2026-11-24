@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-85-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--23-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-88-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,13 +14,15 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-17 and 2026-11-23 (derived from git history).
+Added between 2026-11-18 and 2026-11-24 (derived from git history).
 
 - [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - Official crowdfunding campaign for the first production run, open from November 17 to December 17, 2026, with a $399 public tier and shipping estimated for July 2027 (per launch coverage). _(Official resources)_
 - [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - Community notes, build scripts and changes for running and building Flipper OS on a Banana Pi BPI-M5 Pro (the same hardware as the ArmSoM Sige5, Flipper OS target `sige5`) as a stand-in until Flipper One hardware is available: board bring-up from microSD, a Wi-Fi overlay and a working local image build. _(Boot, kernel, and userspace)_
-- [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders. _(Testing and developer tooling)_
+- [flipperone-profileguard](https://github.com/Avimuller1102/flipperone-profileguard) - Community, hardware-free security tests that run the real `flipper-accountdb.awk` from `flipperos-btrfs-tools` on synthetic scenarios to check how Flipper OS merges `passwd`, `shadow`, `group` and `gshadow` when a profile moves onto a newer build. _(Testing and developer tooling)_
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself. _(Community tools)_
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel. _(Community tools)_
+- [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi. _(Community tools)_
+- [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet. _(Community tools)_
 
 ---
 
@@ -53,12 +55,12 @@ How the entries split between official Flipper Devices sources, community projec
 | [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 9 | 3 | 0 |
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 12 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
-| [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 0 | 1 |
-| [Community tools](#community-tools) | 0 | 16 | 0 |
+| [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 1 | 1 |
+| [Community tools](#community-tools) | 0 | 18 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 4 | 0 | 0 |
-| **Total** | **62** | **20** | **3** |
+| **Total** | **62** | **23** | **3** |
 
 ## Official resources
 
@@ -160,6 +162,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
   - `cpu/sbc-bench.sh` - Bundled copy of [sbc-bench](https://github.com/ThomasKaiser/sbc-bench), the standard SBC benchmark tool.
 - [flipperone-python](https://github.com/flipperdevices/flipperone-python) - Official Python libraries (`pip install flipperone`) for working with a Flipper One from a computer: the MCU's command-line interface, Linux on the main board over SSH, the Debug Probe, and the MCU's (`picotool`) and the CPU's MaskROM (`rockusb`) USB bootloaders.
 - [Archbee starter](https://github.com/Archbee/starter) - Docs are built on Archbee. The official Flipper One developer portal is generated from `flipperone-docs` via Archbee's GitHub integration.
+- [flipperone-profileguard](https://github.com/Avimuller1102/flipperone-profileguard) - Community, hardware-free security tests that run the real `flipper-accountdb.awk` from `flipperos-btrfs-tools` on synthetic scenarios to check how Flipper OS merges `passwd`, `shadow`, `group` and `gshadow` when a profile moves onto a newer build.
 
 ## Community tools
 
@@ -179,6 +182,8 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [FlipCTL for CardputerZero](https://github.com/whywilson/CardputerZeroFlipCtrl) - FlipCTL client for CardputerZero that mirrors the 256×144 grayscale Flipper One screen on its 320×170 LVGL display and sends key controls, over wired Ethernet or LAN Wi-Fi.
 - [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself.
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel.
+- [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi.
+- [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet.
 
 ## Adjacent ecosystems
 
