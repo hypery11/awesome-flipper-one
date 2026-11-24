@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-88-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-89-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -56,11 +56,11 @@ How the entries split between official Flipper Devices sources, community projec
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 12 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
 | [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 1 | 1 |
-| [Community tools](#community-tools) | 0 | 18 | 0 |
+| [Community tools](#community-tools) | 0 | 19 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 4 | 0 | 0 |
-| **Total** | **62** | **23** | **3** |
+| **Total** | **62** | **24** | **3** |
 
 ## Official resources
 
@@ -174,6 +174,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - Unofficial Apple Silicon app that boots Flipper OS in a local VM and shows FlipCTL in a macOS window.
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs OS profile manager, built as a working version of an RFC in `flipperone-linux-build-scripts`.
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Local proof of concept for the Flipper OS storage architecture RFC (squashfs + dm-verity and an all-Btrfs alternative).
+- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - Community attempt at an open DDR trainer to replace the closed RK3576 DDR blob in the boot chain. Unavailable (404, checked 2026-11-24).
 - [Dolphone](https://github.com/isaacrowntree/dolphone) - Unofficial calls and texts for a Flipper One with a cellular modem in the M.2 slot: FlipCTL dialer and messages apps on the panel, a desktop app, and a `phonectl` shell tool, with Bluetooth headsets and SIP calling. Hobby software, not for emergencies.
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - Standalone offline browser simulator of the Flipper One concept with a clickable handheld and a 256×144 framebuffer; an independent educational project that does not run the official firmware or Linux.
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP app: a UVC HDMI capture dongle plus a USB-C cable let you see a computer's screen and drive its keyboard, absolute mouse and a virtual USB drive or CD-ROM (ISO upload) from a browser over HTTPS, with one-time pairing codes shown on the panel.

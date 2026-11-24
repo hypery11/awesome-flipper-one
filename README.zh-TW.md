@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-88-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-89-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -56,11 +56,11 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 | [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 12 | 0 | 0 |
 | [MCU 韌體](#mcu-韌體) | 5 | 0 | 0 |
 | [測試與開發工具](#測試與開發工具) | 1 | 1 | 1 |
-| [社群工具](#社群工具) | 0 | 18 | 0 |
+| [社群工具](#社群工具) | 0 | 19 | 0 |
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
 | [文章與公告](#文章與公告) | 4 | 0 | 0 |
-| **合計** | **62** | **23** | **3** |
+| **合計** | **62** | **24** | **3** |
 
 ## 官方資源
 
@@ -174,6 +174,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [Flipper One Mac Demo](https://github.com/Nirbhik-Acharya-official/flipper-one-mac-demo) - 非官方 Apple Silicon App，在本機 VM 開機 Flipper OS，並在 macOS 視窗中顯示 FlipCTL。
 - [flipper-profile](https://github.com/NetVar1337/flipper-profile) - btrfs + overlayfs 的 OS 設定檔管理工具，是 `flipperone-linux-build-scripts` 一項 RFC 的實作版本。
 - [flipper-os-lab](https://github.com/xbizzybone/flipper-os-lab) - Flipper OS 儲存架構 RFC 的本機概念驗證（squashfs + dm-verity，以及全 Btrfs 的替代方案）。
+- [RK3576 Open LPDDR4X DDR Trainer](https://github.com/kendun555-svg/ddr-trainer) - 社群嘗試做出開源 DDR trainer，取代開機流程中封閉的 RK3576 DDR blob。已失效（404，檢查日期 2026-11-24）。
 - [Dolphone](https://github.com/isaacrowntree/dolphone) - 非官方的 Flipper One 通話與簡訊套件，需在 M.2 槽裝行動數據機：面板上的 FlipCTL 撥號與簡訊 App、桌面 App 和 `phonectl` 命令列工具，支援藍牙耳機與 SIP 通話。屬業餘軟體，不可用於緊急求救。
 - [Flipper One Simulator](https://github.com/kai9987kai/FLIPPER-ONE-SIMULATOR) - 獨立、可離線使用的瀏覽器版 Flipper One 概念模擬器，有可點擊的機身與 256×144 畫面緩衝區；屬獨立教育專案，不會執行官方韌體或 Linux。
 - [Flipper One KVM](https://github.com/thinkelastic/flipper-kvm) - KVM over IP App：搭配 UVC HDMI 擷取棒與一條 USB-C 線，就能在瀏覽器透過 HTTPS 看到電腦畫面，並操作它的鍵盤、絕對座標滑鼠，以及虛擬 USB 隨身碟或光碟（可上傳 ISO），配對用的一次性代碼顯示在面板上。
