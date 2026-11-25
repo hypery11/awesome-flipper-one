@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-89-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--24-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-91-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,15 +14,16 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-18 and 2026-11-24 (derived from git history).
+Added between 2026-11-19 and 2026-11-25 (derived from git history).
 
 - [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - Official crowdfunding campaign for the first production run, open from November 17 to December 17, 2026, with a $399 public tier and shipping estimated for July 2027 (per launch coverage). _(Official resources)_
 - [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - Community notes, build scripts and changes for running and building Flipper OS on a Banana Pi BPI-M5 Pro (the same hardware as the ArmSoM Sige5, Flipper OS target `sige5`) as a stand-in until Flipper One hardware is available: board bring-up from microSD, a Wi-Fi overlay and a working local image build. _(Boot, kernel, and userspace)_
+- [flipperone-mcu-toolchain](https://github.com/flipperdevices/flipperone-mcu-toolchain) - Official, versioned and hash-verified bundle of everything needed to build, flash, debug and lint the RP2350 MCU firmware (Arm GCC with GDB, Pico SDK, picotool and pioasm, OpenOCD, CMake, Ninja, Python with protobuf tooling, clang-format and clang-tidy), shipped as archives for Linux, macOS and Windows and as a Docker image. _(MCU firmware)_
 - [flipperone-profileguard](https://github.com/Avimuller1102/flipperone-profileguard) - Community, hardware-free security tests that run the real `flipper-accountdb.awk` from `flipperos-btrfs-tools` on synthetic scenarios to check how Flipper OS merges `passwd`, `shadow`, `group` and `gshadow` when a profile moves onto a newer build. _(Testing and developer tooling)_
-- [f1emu](https://github.com/VSHT3/flipper-one-emu) - Unofficial tool that runs the official Flipper One OS on a Linux PC in QEMU without root: it downloads an official Flipper OS image, boots its kernel with only the hardware emulated, and opens the device's remote view in a browser; ships no Flipper software itself. _(Community tools)_
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel. _(Community tools)_
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi. _(Community tools)_
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet. _(Community tools)_
+- [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - Unofficial single QEMU machine that emulates both Flipper One chips to run their unmodified firmware: the RP2350 boot ROM and MCU firmware (screen, buttons, touchpad, LEDs, haptics) alongside the RK3576 running Flipper OS with FlipCTL; sibling of the author's FlipperZeroEmu. _(Community tools)_
 
 ---
 
@@ -54,13 +55,13 @@ How the entries split between official Flipper Devices sources, community projec
 | [Hardware](#hardware) | 9 | 0 | 2 |
 | [Boot, kernel, and userspace](#boot-kernel-and-userspace) | 9 | 3 | 0 |
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 12 | 0 | 0 |
-| [MCU firmware](#mcu-firmware) | 5 | 0 | 0 |
+| [MCU firmware](#mcu-firmware) | 6 | 0 | 0 |
 | [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 1 | 1 |
-| [Community tools](#community-tools) | 0 | 19 | 0 |
+| [Community tools](#community-tools) | 0 | 20 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 4 | 0 | 0 |
-| **Total** | **62** | **24** | **3** |
+| **Total** | **63** | **25** | **3** |
 
 ## Official resources
 
@@ -153,6 +154,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [How to build firmware](https://docs.flipper.net/one/mcu-firmware/how-to-build-firmware) - Build the MCU `.uf2` from source and upload it over USB.
 - [flipperone-mcu-protobuf](https://github.com/flipperdevices/flipperone-mcu-protobuf) - Protobuf description of the MCU RPC protocol, used as a submodule by the MCU firmware.
 - [fbtng-corelibs](https://github.com/flipperdevices/fbtng-corelibs) - Core libraries included in the MCU firmware as `lib/corelibs`.
+- [flipperone-mcu-toolchain](https://github.com/flipperdevices/flipperone-mcu-toolchain) - Official, versioned and hash-verified bundle of everything needed to build, flash, debug and lint the RP2350 MCU firmware (Arm GCC with GDB, Pico SDK, picotool and pioasm, OpenOCD, CMake, Ninja, Python with protobuf tooling, clang-format and clang-tidy), shipped as archives for Linux, macOS and Windows and as a Docker image.
 
 ## Testing and developer tooling
 
@@ -185,6 +187,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [DOOM on reComputer RK3576 with FlipCTL](https://github.com/inteintegrity/doom-rk3576) - One-script setup of FlipCTL plus a DOOM app (dsda-doom with Freedoom data, no commercial WAD needed) on a reComputer RK3576 running Debian Bookworm-based Armbian, played from a PC browser over an SSH tunnel.
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi.
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet.
+- [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - Unofficial single QEMU machine that emulates both Flipper One chips to run their unmodified firmware: the RP2350 boot ROM and MCU firmware (screen, buttons, touchpad, LEDs, haptics) alongside the RK3576 running Flipper OS with FlipCTL; sibling of the author's FlipperZeroEmu.
 
 ## Adjacent ecosystems
 
