@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-91-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-92-blue)](#目錄) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--26-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 [English](README.md) | 繁體中文
 
@@ -14,7 +14,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 
 ## 本週新增
 
-2026-11-19 至 2026-11-25 新增的條目（依 git 紀錄整理）。
+2026-11-20 至 2026-11-26 新增的條目（依 git 紀錄整理）。
 
 - [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - 官方募資活動，用來資助第一批量產，募資期間為 2026 年 11 月 17 日至 12 月 17 日，公開方案 399 美元，預計 2027 年 7 月出貨（依開跑時的媒體報導）。 _(官方資源)_
 - [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - 社群的筆記、建置腳本與修改，在 Flipper One 硬體出貨前，以 Banana Pi BPI-M5 Pro（與 ArmSoM Sige5 相同硬體，Flipper OS 目標名稱 `sige5`）當替代板來執行與建置 Flipper OS：從 microSD 開機的板子 bring-up、Wi-Fi overlay，以及可用的本機映像建置。 _(開機、核心與使用者空間)_
@@ -24,6 +24,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - 非官方的 Flipper One OS x86_64 可開機 Live ISO（Debian 13），供 VirtualBox 或 VMware 使用，以未修改的官方 `flipperone-linux-build-scripts`、`flipctl-slint` 與 `flipctl-apps` 建置：掌機模式只顯示 FlipCTL，用鍵盤與滑鼠操作；另有 KDE Plasma 桌面模式，Wi-Fi 為模擬。 _(社群工具)_
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - 用來測試自己裝置的網路模糊測試工具，重播錄下的連線（JSON 或 pcap），每個案例只改一則訊息，探測目標並保存故障前的案例；Python 引擎與命令列已可使用，Flipper One App 尚未在實機上執行過。 _(社群工具)_
 - [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - 非官方的單一 QEMU 機器，同時模擬 Flipper One 的兩顆晶片並執行未經修改的韌體：RP2350 的開機 ROM 與 MCU 韌體（螢幕、按鍵、觸控板、LED、震動），以及執行 Flipper OS 與 FlipCTL 的 RK3576；是作者 FlipperZeroEmu 的姊妹專案。 _(社群工具)_
+- [Wi-Fi Analyzer for reComputer RK3576](https://github.com/inteintegrity/rk3576-wifi-analyzer) - 唯讀的 Wi-Fi 基地台掃描 App（Rust、`flipctl-app` 與 Slint，ARM64 AppImage），在 reComputer RK3576 上的 FlipCTL WebUI 內執行：在 256×144 畫布上以真實的 `nmcli` 訊號值顯示網路清單、基地台詳細資料與 2.4／5 GHz 頻道圖，不連線、不開監聽模式，也不做密碼攻擊。 _(社群工具)_
 
 ---
 
@@ -57,11 +58,11 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 | [Flipper OS 與 FlipCTL](#flipper-os-與-flipctl) | 12 | 0 | 0 |
 | [MCU 韌體](#mcu-韌體) | 6 | 0 | 0 |
 | [測試與開發工具](#測試與開發工具) | 1 | 1 | 1 |
-| [社群工具](#社群工具) | 0 | 20 | 0 |
+| [社群工具](#社群工具) | 0 | 21 | 0 |
 | [相關生態系](#相關生態系) | 3 | 1 | 0 |
 | [社群](#社群) | 3 | 0 | 0 |
 | [文章與公告](#文章與公告) | 4 | 0 | 0 |
-| **合計** | **63** | **25** | **3** |
+| **合計** | **63** | **26** | **3** |
 
 ## 官方資源
 
@@ -188,6 +189,7 @@ Flipper One **和 Flipper Zero 不是同一台裝置**。Flipper Zero 主打離�
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - 非官方的 Flipper One OS x86_64 可開機 Live ISO（Debian 13），供 VirtualBox 或 VMware 使用，以未修改的官方 `flipperone-linux-build-scripts`、`flipctl-slint` 與 `flipctl-apps` 建置：掌機模式只顯示 FlipCTL，用鍵盤與滑鼠操作；另有 KDE Plasma 桌面模式，Wi-Fi 為模擬。
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - 用來測試自己裝置的網路模糊測試工具，重播錄下的連線（JSON 或 pcap），每個案例只改一則訊息，探測目標並保存故障前的案例；Python 引擎與命令列已可使用，Flipper One App 尚未在實機上執行過。
 - [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - 非官方的單一 QEMU 機器，同時模擬 Flipper One 的兩顆晶片並執行未經修改的韌體：RP2350 的開機 ROM 與 MCU 韌體（螢幕、按鍵、觸控板、LED、震動），以及執行 Flipper OS 與 FlipCTL 的 RK3576；是作者 FlipperZeroEmu 的姊妹專案。
+- [Wi-Fi Analyzer for reComputer RK3576](https://github.com/inteintegrity/rk3576-wifi-analyzer) - 唯讀的 Wi-Fi 基地台掃描 App（Rust、`flipctl-app` 與 Slint，ARM64 AppImage），在 reComputer RK3576 上的 FlipCTL WebUI 內執行：在 256×144 畫布上以真實的 `nmcli` 訊號值顯示網路清單、基地台詳細資料與 2.4／5 GHz 頻道圖，不連線、不開監聽模式，也不做密碼攻擊。
 
 ## 相關生態系
 

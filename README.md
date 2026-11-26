@@ -2,7 +2,7 @@
 
 ![Awesome Flipper One](assets/banner.png)
 
-[![Entries](https://img.shields.io/badge/entries-91-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--25-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
+[![Entries](https://img.shields.io/badge/entries-92-blue)](#contents) [![Last updated](https://img.shields.io/badge/last_updated-2026--11--26-brightgreen)](https://github.com/hypery11/awesome-flipper-one/commits/main/) [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey)](LICENSE) [![Link check](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml/badge.svg)](https://github.com/hypery11/awesome-flipper-one/actions/workflows/links.yml)
 
 English | [繁體中文](README.zh-TW.md)
 
@@ -14,7 +14,7 @@ This list tracks what's currently public, what's being worked on, and where to p
 
 ## New this week
 
-Added between 2026-11-19 and 2026-11-25 (derived from git history).
+Added between 2026-11-20 and 2026-11-26 (derived from git history).
 
 - [Flipper One Kickstarter](https://www.kickstarter.com/projects/flipper-devices/flipper-one) - Official crowdfunding campaign for the first production run, open from November 17 to December 17, 2026, with a $399 public tier and shipping estimated for July 2027 (per launch coverage). _(Official resources)_
 - [Flipper One Development (Morgoth-Operations)](https://github.com/Morgoth-Operations/Flipper-One-Development) - Community notes, build scripts and changes for running and building Flipper OS on a Banana Pi BPI-M5 Pro (the same hardware as the ArmSoM Sige5, Flipper OS target `sige5`) as a stand-in until Flipper One hardware is available: board bring-up from microSD, a Wi-Fi overlay and a working local image build. _(Boot, kernel, and userspace)_
@@ -24,6 +24,7 @@ Added between 2026-11-19 and 2026-11-25 (derived from git history).
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi. _(Community tools)_
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet. _(Community tools)_
 - [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - Unofficial single QEMU machine that emulates both Flipper One chips to run their unmodified firmware: the RP2350 boot ROM and MCU firmware (screen, buttons, touchpad, LEDs, haptics) alongside the RK3576 running Flipper OS with FlipCTL; sibling of the author's FlipperZeroEmu. _(Community tools)_
+- [Wi-Fi Analyzer for reComputer RK3576](https://github.com/inteintegrity/rk3576-wifi-analyzer) - Read-only Wi-Fi access-point scanner app (Rust, `flipctl-app` and Slint, ARM64 AppImage) that runs inside the FlipCTL WebUI on a reComputer RK3576: network list, AP details and 2.4 / 5 GHz channel charts on the 256×144 canvas from real `nmcli` signal values, with no connecting, monitor mode or password attacks. _(Community tools)_
 
 ---
 
@@ -57,11 +58,11 @@ How the entries split between official Flipper Devices sources, community projec
 | [Flipper OS and FlipCTL](#flipper-os-and-flipctl) | 12 | 0 | 0 |
 | [MCU firmware](#mcu-firmware) | 6 | 0 | 0 |
 | [Testing and developer tooling](#testing-and-developer-tooling) | 1 | 1 | 1 |
-| [Community tools](#community-tools) | 0 | 20 | 0 |
+| [Community tools](#community-tools) | 0 | 21 | 0 |
 | [Adjacent ecosystems](#adjacent-ecosystems) | 3 | 1 | 0 |
 | [Community](#community) | 3 | 0 | 0 |
 | [Articles and announcements](#articles-and-announcements) | 4 | 0 | 0 |
-| **Total** | **63** | **25** | **3** |
+| **Total** | **63** | **26** | **3** |
 
 ## Official resources
 
@@ -188,6 +189,7 @@ Development is split across seven GitHub repositories. Each has its own Kanban, 
 - [FlipperOneISO](https://github.com/Armand220/FlipperOneISO) - Unofficial bootable x86_64 live ISO (Debian 13) of Flipper One OS for VirtualBox or VMware, built from unmodified official `flipperone-linux-build-scripts`, `flipctl-slint` and `flipctl-apps`: a handheld mode with FlipCTL alone on screen driven by keyboard and mouse, and a KDE Plasma desktop mode, with simulated Wi-Fi.
 - [pocketfuzz](https://github.com/interfecto/pocketfuzz) - Network fuzzer for testing your own devices that replays a recorded session (JSON or pcap) with one message changed per case, probes the target and saves the cases before a failure; the Python engine and CLI work, while the Flipper One app has not run on hardware yet.
 - [FlipperOneEmu](https://github.com/KaraZajac/FlipperOneEmu) - Unofficial single QEMU machine that emulates both Flipper One chips to run their unmodified firmware: the RP2350 boot ROM and MCU firmware (screen, buttons, touchpad, LEDs, haptics) alongside the RK3576 running Flipper OS with FlipCTL; sibling of the author's FlipperZeroEmu.
+- [Wi-Fi Analyzer for reComputer RK3576](https://github.com/inteintegrity/rk3576-wifi-analyzer) - Read-only Wi-Fi access-point scanner app (Rust, `flipctl-app` and Slint, ARM64 AppImage) that runs inside the FlipCTL WebUI on a reComputer RK3576: network list, AP details and 2.4 / 5 GHz channel charts on the 256×144 canvas from real `nmcli` signal values, with no connecting, monitor mode or password attacks.
 
 ## Adjacent ecosystems
 
